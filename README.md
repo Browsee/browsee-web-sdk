@@ -4,7 +4,7 @@
 Browsee's web SDK lets you install Browsee on SPAs or website without having to
 install javascript manually. Learn more about Browsee at https://docs.browsee.io.
 
-This SDK supports SSR as well as non-SSR setups.
+This SDK supports Service Side Rendered (SSR) as well as non-SSR setups.
 
 ## Install the SDK
 
@@ -21,13 +21,13 @@ yarn add @browsee/web-sdk
 
 ## Usage
 
-* import browsee from '@browsee/web-sdk';
+* `import browsee from '@browsee/web-sdk'`;
 
 * Call the `init()` function with your project's API key either in the main component or in the components where you would like to start Browsee sessions.
 
 ### API Key
 
-You need a valid `apiKey` for this SDK. More about getting your API key [here](https://app.gitbook.com/@browsee/s/docs/integration/snippet-integration).
+You need a valid `apiKey` for this SDK. More about getting your API key [here](https://docs.browsee.io/integration/sdk-integration).
 
 ### Examples
 
@@ -118,4 +118,4 @@ browsee.logEvent('Event Name', {key: value, ...});
 browsee.getSessionUrl(function(url) { console.log('Current session', url); });
 ```
 
-Learn more about these APIs [here](https://app.gitbook.com/@browsee/s/docs/integration/api-calls/identify-call).
+Learn more about these APIs [here](https://docs.browsee.io/integration/api-calls).
